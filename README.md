@@ -36,7 +36,9 @@ _Professional Product Catalog featuring a searchable and filterable gear archive
 - **📊 Analytics Dashboard**: Visual data visualization for sales trends, revenue, and product performance monitoring.
 - **🧾 Smart Order Receipts**: Detailed, printable order success views with "Admin Mode" for order management.
 - **📱 Ultra-Responsive Overhaul**: Optimized 2-column mobile grids, scaled typography, and a powerful mobile drawer with search integration.
-- **🖼️ Drag & Drop Content**: Seamless product image updates via a dedicated upload system for admins.
+- **🖼️ Cloudinary Integration**: High-performance, cloud-based image hosting and management for product media.
+- **🔍 Professional SEO Suite**: Dynamic metadata for products, integrated `sitemap.ts`, and `robots.ts` for maximum search visibility.
+- **🚀 One-Click Deployment**: Standardized configuration for seamless hosting on platforms like Render.
 
 ## 🛠️ Tech Stack
 
