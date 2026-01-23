@@ -103,7 +103,9 @@ export default function AddProductPage() {
                 placeholder="e.g. Sony A7IV Camera"
               />
               {errors.name && (
-                <p className="text-red-500 text-xs">{errors.name.message}</p>
+                <p className="text-red-500 text-xs">
+                  {(errors.name as any).message}
+                </p>
               )}
             </div>
 
@@ -120,7 +122,9 @@ export default function AddProductPage() {
                   placeholder="0.00"
                 />
                 {errors.price && (
-                  <p className="text-red-500 text-xs">{errors.price.message}</p>
+                  <p className="text-red-500 text-xs">
+                    {(errors.price as any).message}
+                  </p>
                 )}
               </div>
               <div className="space-y-2">
@@ -133,7 +137,9 @@ export default function AddProductPage() {
                   placeholder="e.g. Sony"
                 />
                 {errors.brand && (
-                  <p className="text-red-500 text-xs">{errors.brand.message}</p>
+                  <p className="text-red-500 text-xs">
+                    {(errors.brand as any).message}
+                  </p>
                 )}
               </div>
             </div>
@@ -150,7 +156,7 @@ export default function AddProductPage() {
               />
               {errors.description && (
                 <p className="text-red-500 text-xs">
-                  {errors.description.message}
+                  {(errors.description as any).message}
                 </p>
               )}
             </div>
@@ -167,7 +173,9 @@ export default function AddProductPage() {
               />
               <input type="hidden" {...register("image")} />
               {errors.image && (
-                <p className="text-red-500 text-xs">{errors.image.message}</p>
+                <p className="text-red-500 text-xs">
+                  {(errors.image as any).message}
+                </p>
               )}
             </div>
           </div>
@@ -196,7 +204,7 @@ export default function AddProductPage() {
               </select>
               {errors.category && (
                 <p className="text-red-500 text-xs">
-                  {errors.category.message}
+                  {(errors.category as any).message}
                 </p>
               )}
             </div>
@@ -216,7 +224,9 @@ export default function AddProductPage() {
                 <option value="Content Creation">Content Creation</option>
               </select>
               {errors.niche && (
-                <p className="text-red-500 text-xs">{errors.niche.message}</p>
+                <p className="text-red-500 text-xs">
+                  {(errors.niche as any).message}
+                </p>
               )}
             </div>
 

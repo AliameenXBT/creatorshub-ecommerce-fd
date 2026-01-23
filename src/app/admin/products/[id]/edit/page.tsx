@@ -143,7 +143,9 @@ export default function EditProductPage() {
                 placeholder="e.g. Sony A7IV Camera"
               />
               {errors.name && (
-                <p className="text-red-500 text-xs">{errors.name.message}</p>
+                <p className="text-red-500 text-xs">
+                  {(errors.name as any).message}
+                </p>
               )}
             </div>
 
@@ -160,7 +162,9 @@ export default function EditProductPage() {
                   placeholder="0.00"
                 />
                 {errors.price && (
-                  <p className="text-red-500 text-xs">{errors.price.message}</p>
+                  <p className="text-red-500 text-xs">
+                    {(errors.price as any).message}
+                  </p>
                 )}
               </div>
               <div className="space-y-2">
@@ -173,7 +177,9 @@ export default function EditProductPage() {
                   placeholder="e.g. Sony"
                 />
                 {errors.brand && (
-                  <p className="text-red-500 text-xs">{errors.brand.message}</p>
+                  <p className="text-red-500 text-xs">
+                    {(errors.brand as any).message}
+                  </p>
                 )}
               </div>
             </div>
@@ -190,7 +196,7 @@ export default function EditProductPage() {
               />
               {errors.description && (
                 <p className="text-red-500 text-xs">
-                  {errors.description.message}
+                  {(errors.description as any).message}
                 </p>
               )}
             </div>
@@ -231,7 +237,7 @@ export default function EditProductPage() {
               </select>
               {errors.category && (
                 <p className="text-red-500 text-xs">
-                  {errors.category.message}
+                  {(errors.category as any).message}
                 </p>
               )}
             </div>
