@@ -66,7 +66,10 @@ export default function AnalyticsDashboard({ data }: AnalyticsDashboardProps) {
                     color: "#fff",
                   }}
                   itemStyle={{ color: "#fff" }}
-                  formatter={(value: number) => [formatPrice(value), "Revenue"]}
+                  formatter={(value: any) => [
+                    formatPrice(Number(value) || 0),
+                    "Revenue",
+                  ]}
                 />
                 <Area
                   type="monotone"
