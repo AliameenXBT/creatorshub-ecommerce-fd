@@ -1,6 +1,6 @@
 # ⚡ Creators Hub Foundry
 
-**Creators Hub Foundry** is a modern e-commerce store made for creators. It bridges the gap between imagination and execution by providing professional-grade tools and equipment carefully curated to support respective niches..
+**Creators Hub Foundry** is a modern e-commerce store made for creators. It bridges the gap between imagination and execution by providing professional-grade tools and equipment carefully curated to support diverse creative niches..
 
 ### 🌐 Live Demo: [creatorshub-3lyb.onrender.com](https://creatorshub-3lyb.onrender.com)
 
