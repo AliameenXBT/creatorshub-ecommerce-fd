@@ -1,5 +1,12 @@
 import Link from "next/link";
 import { ArrowRight, Target, Users, Zap, Globe } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Story | Creators Hub",
+  description:
+    "Learn about the mission and team behind the ultra-premium foundry for professional content creators.",
+};
 
 export default function AboutPage() {
   return (

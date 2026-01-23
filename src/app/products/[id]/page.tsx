@@ -15,6 +15,32 @@ interface ProductPageProps {
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api";
 
+export async function generateMetadata({ params }: ProductPageProps) {
+  const { id } = await params;
+  try {
+    const res = await fetch(`${API_URL}/products/${id}`);
+    const data = await res.json();
+    if (data.success) {
+      const product = data.data;
+      return {
+        title: `${product.name} | Creators Hub`,
+        description: product.description,
+        openGraph: {
+          title: `${product.name} | Creators Hub`,
+          description: product.description,
+          images: [{ url: product.image }],
+        },
+      };
+    }
+  } catch (error) {
+    console.error("Metadata error:", error);
+  }
+
+  return {
+    title: "Product Not Found | Creators Hub",
+  };
+}
+
 export default async function ProductPage({ params }: ProductPageProps) {
   const { id } = await params;
 
